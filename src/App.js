@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import Background from "../images/foodit.jpg";
 import { useState } from "react";
 
 const foodDB = {
@@ -52,10 +51,6 @@ export default function App() {
   }
   return (
     <div className="App">
-      <div
-        className="Mainit"
-        style={{ backgroundImage: `url(${Background})` }}
-      ></div>
       <h1 style={{ fontSize: "2.5rem", color: "white" }}>
         {" "}
         🍱 GoodFood GoodLife{" "}
