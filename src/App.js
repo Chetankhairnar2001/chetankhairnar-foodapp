@@ -9,11 +9,11 @@ const foodDB = {
       rating: "4/5"
     },
     {
-      name: "Pav Bhaji 🥙🎂",
+      name: "Pav Bhaji 🥙",
       rating: "3.5/5"
     },
     {
-      name: "Cake 🎂",
+      name: "Paneer Tikka 🍛 ",
       rating: "5/5"
     }
   ],
@@ -41,6 +41,16 @@ const foodDB = {
       name: "Prawns Rice 🍤",
       rating: "4/5"
     }
+  ],
+  Desert: [
+    {
+      name: "Black Forest Cake 🎂",
+      rating: "5/5"
+    },
+    {
+      name: "Gulab Jamun 🍯",
+      rating: "5/5"
+    }
   ]
 };
 
@@ -51,7 +61,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1 style={{ fontSize: "2.5rem", color: "white" }}>
+      <h1 style={{ fontSize: "2.5rem", color: "darkorange" }}>
         {" "}
         🍱 GoodFood GoodLife{" "}
       </h1>
@@ -78,7 +88,7 @@ export default function App() {
         ))}
       </div>
       <hr />
-      <div style={{ textAlign: "left" }}>
+      <div style={{ textAlign: "center" }}>
         <ul style={{ paddingInlineStart: "0" }}>
           {foodDB[selectedGenre].map((items) => (
             <li
@@ -90,7 +100,8 @@ export default function App() {
                 width: "70%",
                 margin: "1rem auto",
                 borderRadius: "0.5rem",
-                fontWeight: "bolder"
+                fontWeight: "bolder",
+                backgroundColor: "wheat"
               }}
             >
               {" "}
@@ -103,8 +114,7 @@ export default function App() {
       <div
         style={{
           color: "white",
-          paddingTop: "2rem",
-          fontWeight: "bolder"
+          paddingTop: "2rem"
         }}
       >
         {" "}
