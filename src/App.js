@@ -97,7 +97,7 @@ export default function App() {
                 listStyle: "none",
                 padding: "1rem",
                 border: "2px solid black",
-                width: "70%",
+                width: "55%",
                 margin: "1rem auto",
                 borderRadius: "0.5rem",
                 fontWeight: "bolder",
@@ -118,7 +118,21 @@ export default function App() {
         }}
       >
         {" "}
-        Thankyou for visiting the website
+        <div style={{ color: "orange", paddingTop: "4rem" }}>
+          {" "}
+          Thankyou for visiting the website{" "}
+        </div>
+        <div style={{ color: "blue" }}> Made with ♥ by Chetan Khairnar </div>
+        <a
+          href="https://chetankhairnar-portfolio.netlify.app/"
+          style={{
+            textDecoration: "none",
+            color: "yellowgreen",
+            fontFamily: "fantasy"
+          }}
+        >
+          My PortFolio
+        </a>
       </div>
     </div>
   );
